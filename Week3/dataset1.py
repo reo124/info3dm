@@ -37,3 +37,6 @@ df["観測値"] = obs_val
 plt.scatter(x_obs, obs_val, label='観測値', marker='x', color='red')
 plt.legend()
 plt.savefig('ex1.3.png')
+
+# ex1.4
+df.to_csv('ex1_data.tsv', sep='\t', index=False)
