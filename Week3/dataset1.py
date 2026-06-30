@@ -54,6 +54,8 @@ def ex1_4(df):
 def ex1_5():
     df_loaded = pd.read_csv('ex1_data.tsv', sep='\t')
 
+    return df_loaded
+
 # 直接実行時
 if __name__ == '__main__':
     ex1_1()
