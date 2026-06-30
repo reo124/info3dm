@@ -28,3 +28,12 @@ df = pd.DataFrame({"観測点" : x_obs, "真値" : y_true})
 plt.scatter(x_obs, y_true, label='観測点', s=100)
 plt.legend()
 plt.savefig('ex1.2.png')
+
+# ex1.3
+noise = np.random.normal(0.0, np.sqrt(2.0), 20) / 2
+obs_val = y_true + noise
+df["観測値"] = obs_val
+
+plt.scatter(x_obs, obs_val, label='観測値', marker='x', color='red')
+plt.legend()
+plt.savefig('ex1.3.png')
